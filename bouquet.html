@@ -35,7 +35,7 @@
 
     <!-- ITEM 1 -->
     <div class="product">
-      <img src="pictures/img1.jpeg">
+      <img src="pictures/img1.jpeg"class="click-img">
       <h3>Sunflower Heart Bouquet</h3>
       <p class="price">₹920</p>
       <button onclick="addToCart('Sunflower Heart Bouquet',920,'pictures/img1.jpeg')">
@@ -45,7 +45,7 @@
 
     <!-- ITEM 2 -->
     <div class="product">
-      <img src="pictures/img2.jpeg">
+      <img src="pictures/img2.jpeg"class="click-img">
       <h3>Bunch of Forever Flowers</h3>
       <p class="price">₹1550</p>
       <button onclick="addToCart('Bunch of Forever Flowers',1550,'pictures/img2.jpeg')">
@@ -55,7 +55,7 @@
 
     <!-- ITEM 3 -->
     <div class="product">
-      <img src="pictures/img22.jpeg">
+      <img src="pictures/img22.jpeg"class="click-img">
       <h3>Red Bouquet</h3>
       <p class="price">₹850</p>
       <button onclick="addToCart('Red Bouquet',850,'pictures/img22.jpeg')">
@@ -65,7 +65,7 @@
 
     <!-- ITEM 4 -->
     <div class="product">
-      <img src="pictures/img7.jpeg">
+      <img src="pictures/img7.jpeg"class="click-img">
       <h3>Pastel Bouquet</h3>
       <p class="price">₹980</p>
       <button onclick="addToCart('Pastel Bouquet',980,'pictures/img7.jpeg')">
@@ -75,7 +75,7 @@
 
     <!-- ITEM 5 -->
     <div class="product">
-      <img src="pictures/img5.jpeg">
+      <img src="pictures/img5.jpeg"class="click-img">
       <h3>Pink Flowers</h3>
       <p class="price">₹749</p>
       <button onclick="addToCart('Pink Flowers',749,'pictures/img5.jpeg')">
@@ -85,7 +85,7 @@
 
     <!-- ITEM 6 -->
     <div class="product">
-      <img src="pictures/img6.jpeg">
+      <img src="pictures/img6.jpeg"class="click-img">
       <h3>Sunflower Bouquet</h3>
       <p class="price">₹255</p>
       <button onclick="addToCart('Sunflower Bouquet',255,'pictures/img6.jpeg')">
@@ -120,8 +120,25 @@
   </div>
 </footer>
 
+
 <!-- JS -->
 <script src="script.js"></script>
+
+  <div id="popup" style="
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+">
+  <img id="popup-img" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
+  
 
 </body>
 </html>
