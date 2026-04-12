@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gloves - UneedIndia</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!--  NAVBAR -->
+<header class="navbar">
+  <h1 class="logo">UneedIndia</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#categories">Categories</a>
+    <a href="review.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+
+    <!-- 🛒 CART -->
+    <a href="cart.html" class="cart-icon">
+      🛒 <span id="cart-count">0</span>
+    </a>
+  </nav>
+</header>
+
+<!--  PRODUCTS -->
+<section class="products gloves-page">
+  <h2>Gloves</h2>
+
+  <div class="product-grid">
+
+    <!-- ITEM 1 -->
+    <div class="product">
+      <img src="pictures/img16.jpeg">
+      <h3>White Crochet Gloves</h3>
+      <p class="price">₹499</p>
+      <button onclick="addToCart('White Crochet Gloves',499,'pictures/img16.jpeg')">
+        Add to Cart
+      </button>
+    </div>
+
+    <!-- ITEM 2 -->
+    <div class="product">
+      <img src="pictures/img40.jpeg">
+      <h3>Pink Crochet Gloves</h3>
+      <p class="price">₹449</p>
+      <button onclick="addToCart('Pink Crochet Gloves',449,'pictures/img40.jpeg')">
+        Add to Cart
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!--  FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+
+    <h2 class="footer-logo">UneedIndia</h2>
+
+    <p class="footer-tagline">
+      The Unique You Need
+    </p>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#categories">Shop</a>
+      <a href="review.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <p class="footer-note">
+      © 2026 UneedIndia | All rights reserved
+    </p>
+
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
