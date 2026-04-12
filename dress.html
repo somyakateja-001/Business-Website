@@ -34,7 +34,7 @@
   <div class="product-grid">
 
     <div class="product">
-      <img src="pictures/img24.jpeg">
+      <img src="pictures/img24.jpeg"class="click-img">
       <h3>White Beach Dress</h3>
       <p class="price">₹2999</p>
       <button onclick="addToCart('White Beach Dress',2999,'pictures/img24.jpeg')">
@@ -71,6 +71,21 @@
 
 <!-- JS -->
 <script src="script.js"></script>
+
+  <div id="popup" style="
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+">
+  <img id="popup-img" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
 
 </body>
 </html>
