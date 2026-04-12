@@ -35,7 +35,7 @@
 
     <!-- ITEM 1 -->
     <div class="product">
-      <img src="pictures/img11.jpeg">
+      <img src="pictures/img11.jpeg"class="click-img">
       <h3>Flower Keychain</h3>
       <p class="price">₹249</p>
       <button onclick="addToCart('Flower Keychain',249,'pictures/img11.jpeg')">
@@ -45,7 +45,7 @@
 
     <!-- ITEM 2 -->
     <div class="product">
-      <img src="pictures/img12.jpeg">
+      <img src="pictures/img12.jpeg"class="click-img">
       <h3>Sunflower Keychain</h3>
       <p class="price">₹239</p>
       <button onclick="addToCart('Sunflower Keychain',239,'pictures/img12.jpeg')">
@@ -55,7 +55,7 @@
 
     <!-- ITEM 3 -->
     <div class="product">
-      <img src="pictures/img10.jpeg">
+      <img src="pictures/img10.jpeg"class="click-img">
       <h3>Bouquet Keychain</h3>
       <p class="price">₹350</p>
       <button onclick="addToCart('Bouquet Keychain',350,'pictures/img10.jpeg')">
@@ -65,7 +65,7 @@
 
     <!-- ITEM 4 -->
     <div class="product">
-      <img src="pictures/img9.jpeg">
+      <img src="pictures/img9.jpeg"class="click-img">
       <h3>Tortoise Keychain</h3>
       <p class="price">₹350</p>
       <button onclick="addToCart('Tortoise Keychain',350,'pictures/img9.jpeg')">
@@ -75,7 +75,7 @@
 
     <!-- ITEM 5 -->
     <div class="product">
-      <img src="pictures/img15.jpeg">
+      <img src="pictures/img15.jpeg"class="click-img">
       <h3>Furry Initial Keychain</h3>
       <p class="price">₹350</p>
       <button onclick="addToCart('Furry Initial Keychain',350,'pictures/img15.jpeg')">
@@ -106,6 +106,20 @@
     <p class="footer-note">
       © 2026 UneedIndia | All rights reserved
     </p>
+    <div id="popup" style="
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+">
+  <img id="popup-img" style="max-width:90%; max-height:90%; border-radius:10px;">
+</div>
 
   </div>
 </footer>
