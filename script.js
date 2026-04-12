@@ -84,7 +84,7 @@ function sendWhatsAppMessage() {
 
   let total = cart.reduce((sum, item) => sum + Number(item.price), 0);
 
-  let message = "Hi, I have completed the payment 💖\n\n";
+  let message = "Hi, I have completed the payment \n\n";
 
   message += "Name:\n";
   message += "Phone:\n";
@@ -98,7 +98,7 @@ function sendWhatsAppMessage() {
 
   message += "\nTotal Paid: ₹" + total;
 
-  message += "\n\n📸 Please don’t forget to attach your payment screenshot.";
+  message += "\n\n Please don’t forget to attach your payment screenshot.";
   message += "\nThis will help us confirm your order faster 💖";
 
   let url = "https://wa.me/919588836494?text=" + encodeURIComponent(message);
@@ -117,12 +117,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const popup = document.getElementById("welcome-popup");
 
-  if (!popup) return;
+  if (popup) {
+    if (!sessionStorage.getItem("popupShown")) {
+      popup.style.display = "flex";
+    } else {
+      popup.style.display = "none";
+    }
+  }
 
-  if (!sessionStorage.getItem("popupShown")) {
-    popup.style.display = "flex";
-  } else {
-    popup.style.display = "none";
+  /* =========================
+     IMAGE CLICK POPUP (NEW)
+  ========================= */
+
+  const imagePopup = document.getElementById("popup");
+  const popupImg = document.getElementById("popup-img");
+
+  if (imagePopup && popupImg) {
+    document.querySelectorAll(".click-img").forEach(img => {
+      img.addEventListener("click", function () {
+        imagePopup.style.display = "flex";
+        popupImg.src = this.src;
+      });
+    });
+
+    imagePopup.addEventListener("click", function () {
+      imagePopup.style.display = "none";
+    });
   }
 
 });
