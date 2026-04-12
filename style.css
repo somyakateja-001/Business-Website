@@ -481,3 +481,15 @@ nav a {
 .product img {
   cursor: pointer;
 }
+/* 📱 MOBILE FIX FOR IMAGE POPUP */
+@media (max-width: 768px) {
+  #popup {
+    padding: 20px;
+  }
+
+  #popup img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+  }
+}
